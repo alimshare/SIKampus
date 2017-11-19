@@ -1,0 +1,183 @@
+body{
+	padding:0;background:-moz-radial-gradient(center,white,#def5fd);
+	margin:0;
+}
+	
+.list {
+	width : 100%;
+	position : fixed;
+	top : 0; left :0;
+	height : 50px;
+	background-color : #06799f;
+	font-family : arial;
+}
+
+.list ul li {
+	float : left; color:white;display:block;background-color : transparent;
+	padding :15px;margin-left:1px;
+}
+
+.list ul {margin:0;position : relative;}
+
+.list ul li:hover {
+	background-color :#61b4cf;
+	position : relative;
+	box-shadow: inset 0px 5px 8px 1px white;
+}
+
+.list a {
+	color:white;
+	text-decoration : none;
+}
+
+.list .kanan li {
+	float :right;
+	margin-right : 50px;
+}
+
+.list ul ul {
+	display :none; 
+	position : absolute;
+}
+
+.list ul ul li {
+	//background-color : grey;
+	background-color :#61b4cf;
+	float: left;
+	width: 100px;
+}
+
+.list ul li:hover > ul {
+	display :block;
+	width : 800px;
+	margin-top: 15px;
+	margin-left : -55px;
+}
+
+.content {
+	margin : 100px auto;
+	background-color : #d3e9f0;
+	width : 90%;
+	//min-height : 200px;
+}
+
+.content fieldset {
+	min-height : 350px;
+	border : 0px solid #06799f;
+	border-radius : 5px;
+}
+
+.content>fieldset>.kotak-menu {
+	float : left;
+	display : block;
+	margin : 2% 2% 10px 3px;
+	padding : 15px;
+	border : 1px solid #60b9ce;
+	border-radius : 5px;
+	width : 15%;
+	height : 280px;
+}
+
+a,a:link,a:visited{
+	text-decoration : none;
+	color : white;
+	font-family : arial;
+}
+
+
+.kotak-menu{
+	background-color : #06799f ;
+	box-shadow : /*inset 0px 0px 15px 12px #cdf1fd,*/ 0px 0px 5px 2px #49bee3;
+	border-radius : 15px;
+	text-align: center;	
+}
+
+.kotak-menu img {
+	width: 100%;
+	height: 150px;
+}
+
+.btn1{
+	width : 100%;
+	height : 45px;
+	background-color : white;
+	box-shadow : inset 0px 0px 8px 5px silver;
+	border-radius : 8px;
+}
+
+a.btn-white-flat{
+	background-color : white;
+	border: 0px;
+	padding: 10px 20px 10px;
+	color: black;
+}
+
+a.btn-white-flat:hover{
+	background-color : #06799f;
+	color: white;
+}
+
+.kotak-menu:hover {
+	background-color : white;
+	border-radius : 15px;
+}
+
+.kotak-menu:hover a.btn-white-flat {
+	background-color : #06799f;
+	color: white;
+}
+
+.kotak-menu:hover .btn1{
+	background-color : green;
+	box-shadow : inset 0px 0px 8px 5px white;
+}
+
+.kotak-menu:hover h3 {
+	color : #06799f ;
+}
+
+#footer {
+	height : 40px;
+	background-color : #06799f;
+	position : fixed;
+	bottom: 0px;
+	width: 100%;
+	margin-bottom : 0;
+	padding :5px;
+	text-align : center;
+	font-family : verdana;
+}
+
+.icon-menu {
+	height : 50px;
+	width : 50px;	
+	background-color : white;
+}
+
+h3 {
+	text-align: center;
+	color : white;
+}
+
+span {
+	color : white;
+	font-size : 14pt;
+}
+
+legend>div {
+	border : 1px solid #06799f ;
+	padding : 8px;
+	background-color : white;
+}
+
+.a {
+	color : black;
+}
+
+.content > p {
+	padding: 50px;
+	text-align: justify;
+	width: 60%;
+    font-family: Georgia, Serif;
+    font-size: 12pt;
+}

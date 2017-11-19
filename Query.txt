@@ -1,0 +1,16 @@
+select 
+       tahun_ajaran.id_tahun_ajaran, tahun_ajaran.tahun_ajar, tahun_ajaran.semester,
+       hari.id_hari, hari.nama_hari,
+       mata_kuliah.id_mata_kuliah, mata_kuliah.nama_mata_kuliah, 
+       dosen.id_dosen, dosen.nama_dosen,
+       ajar.kelp,
+       sesi.id_sesi, sesi.jam_awal, sesi.jam_akhir,
+       ruang.id_ruang, ruang.nama_ruang, ruang.gedung
+from   jadwal_kuliah
+       inner join ajar on ajar.id_ajar = jadwal_kuliah.id_ajar
+       inner join mata_kuliah on mata_kuliah.id_mata_kuliah = ajar.id_mata_kuliah
+       inner join dosen on dosen.id_dosen = ajar.id_dosen
+       inner join tahun_ajaran on tahun_ajaran.id_tahun_ajaran = ajar.id_tahun_ajaran
+       inner join sesi on sesi.id_sesi = jadwal_kuliah.id_sesi 
+       inner join hari on hari.id_hari = jadwal_kuliah.id_hari
+       inner join ruang on ruang.id_ruang = jadwal_kuliah.id_ruang
